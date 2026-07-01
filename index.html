@@ -4,6 +4,8 @@
 <meta charset="UTF-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 <title>Inklings — the ideas you keep sending each other</title>
+<link rel="icon" type="image/svg+xml" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24'><rect width='24' height='24' rx='5' fill='%237A4A57'/><path d='M12 4.4C12 4.4 6.4 11 6.4 14.6a5.6 5.6 0 1 0 11.2 0C17.6 11 12 4.4 12 4.4Z' fill='%23F4EEE3'/><circle cx='9.6' cy='14.4' r='1.4' fill='%237A4A57' opacity='0.28'/></svg>">
+<link rel="apple-touch-icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24'><rect width='24' height='24' rx='5' fill='%237A4A57'/><path d='M12 4.4C12 4.4 6.4 11 6.4 14.6a5.6 5.6 0 1 0 11.2 0C17.6 11 12 4.4 12 4.4Z' fill='%23F4EEE3'/></svg>">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400;9..144,500;9..144,600;9..144,700&family=Inter:wght@400;500;600&family=Space+Mono:wght@400;700&display=swap" rel="stylesheet">
@@ -360,28 +362,210 @@ function saveProfiles(p){ Store.set(PKEY, JSON.stringify(p)); }
    ============================================================ */
 function defaultData(){
   return {
-    categories: [
-      { id:'home',    name:'Home',    emoji:'🏠', color:'var(--c-home)',
-        desc:'For the walls, the shelves, the future dinner table.',
-        subs:['Living Room','Kitchen','Bedroom','Bathroom','Storage & Organization','Outdoor'] },
-      { id:'wedding', name:'Wedding', emoji:'💍', color:'var(--c-wedding)',
-        desc:'The day itself — venue to the very last flower.',
-        subs:['Venue','Flowers','Attire','Catering','Decor','Music','Photography','Invitations'] },
-      { id:'parties', name:'Parties', emoji:'🎉', color:'var(--c-parties)',
-        desc:'Everything for the people you love in one room.',
-        subs:['Game Nights','Dinner Parties','Birthdays','Holidays','Hosting Tips'] },
-      { id:'kids',    name:'Kids',    emoji:'🧸', color:'var(--c-kids)',
-        desc:'Someday, but written down now.',
-        subs:['Nursery','Activities','Babysitting','Education','Gear'] },
-      { id:'recipes', name:'Recipes', emoji:'🍽️', color:'var(--c-recipes)',
-        desc:'The ones you actually want to make.',
-        subs:['Weeknight','Baking','Cocktails','Big Batch','Treats'] },
-      { id:'travel',  name:'Travel',  emoji:'✈️', color:'var(--c-travel)',
-        desc:'Where you keep saying you should go.',
-        subs:['Honeymoon','Weekend Trips','Someday List','Stays'] },
+    "categories": [
+        {
+            "id": "home",
+            "name": "Home",
+            "emoji": "🏠",
+            "color": "var(--c-home)",
+            "desc": "For the walls, the shelves, the future dinner table.",
+            "subs": [
+                "Living Room",
+                "Kitchen",
+                "Bedroom",
+                "Bathroom",
+                "Storage & Organization",
+                "Outdoor"
+            ]
+        },
+        {
+            "id": "wedding",
+            "name": "Wedding",
+            "emoji": "💍",
+            "color": "var(--c-wedding)",
+            "desc": "The day itself — venue to the very last flower.",
+            "subs": [
+                "Venue",
+                "Flowers",
+                "Attire",
+                "Catering",
+                "Decor",
+                "Music",
+                "Photography",
+                "Invitations"
+            ]
+        },
+        {
+            "id": "parties",
+            "name": "Parties",
+            "emoji": "🎉",
+            "color": "var(--c-parties)",
+            "desc": "Everything for the people you love in one room.",
+            "subs": [
+                "Game Nights",
+                "Dinner Parties",
+                "Birthdays",
+                "Holidays",
+                "Hosting Tips"
+            ]
+        },
+        {
+            "id": "kids",
+            "name": "Kids",
+            "emoji": "🧸",
+            "color": "var(--c-kids)",
+            "desc": "Someday, but written down now.",
+            "subs": [
+                "Nursery",
+                "Activities",
+                "Babysitting",
+                "Education",
+                "Gear"
+            ]
+        },
+        {
+            "id": "recipes",
+            "name": "Recipes",
+            "emoji": "🍽️",
+            "color": "var(--c-recipes)",
+            "desc": "The ones you actually want to make.",
+            "subs": [
+                "Weeknight",
+                "Baking",
+                "Cocktails",
+                "Big Batch",
+                "Treats"
+            ]
+        },
+        {
+            "id": "travel",
+            "name": "Travel",
+            "emoji": "✈️",
+            "color": "var(--c-travel)",
+            "desc": "Where you keep saying you should go.",
+            "subs": [
+                "Honeymoon",
+                "Weekend Trips",
+                "Someday List",
+                "Stays"
+            ]
+        },
+        {
+            "name": "Things to Do",
+            "emoji": "🥱",
+            "desc": "Activities like at home or casual",
+            "color": "var(--c-parties)",
+            "subs": [
+                "Active",
+                "Artsy",
+                "Assortment"
+            ],
+            "id": "mr1jywnzi2u2r"
+        }
     ],
-    items: []
-  };
+    "items": [
+        {
+            "id": "mr1jvurz9j4wv",
+            "created": 1782878598287,
+            "addedBy": "kajal",
+            "title": "Indian Home Inspo",
+            "details": "- Jhoola (living room swing)\n- Rangin Sheeshe (colored glass windows)\n- Chik (bamboo or jute blinds)\n- Aalas (built in wall niches/bookshelves)\n- Verandah (transition of inside/outside)",
+            "cat": "home",
+            "sub": "Living Room",
+            "status": "love",
+            "cost": "",
+            "tags": [
+                "Indian"
+            ],
+            "source": "https://www.instagram.com/p/DZ34vkmiDCT/",
+            "platform": "Instagram"
+        },
+        {
+            "id": "mr1jzpbeslgsb",
+            "created": 1782878777834,
+            "addedBy": "kajal",
+            "title": "Things I'd Love To Do with You Checklist",
+            "details": "Watch a sunrise\nA shared playlist\nWatch a sunset\nPaint together\nHave a picnic\nA pottery class\nVisit a bookstore\nPlay a sport\nA spontaneous trip\nTravel to a new city\nBake cookies\nGo skiing\nA movie marathon\nA late-night drive\nMove in together\nVisit an aquarium\nGet matching outfits\nGo to an art museum\nGo backpacking\nTake photobooths\nA lazy Sunday\nA christmas date\nStargazing\nStay up til sunrise\nGo to a theme park\nKiss in the rain\nSing Karaoke\nAn escape room\nRock climbing\nGo to a rooftop bar\nRun a marathon\nSky diving\nA game night\nCook a dinner",
+            "cat": "mr1jywnzi2u2r",
+            "sub": "Assortment",
+            "status": "idea",
+            "cost": "",
+            "tags": [],
+            "source": "https://www.instagram.com/p/DZNpS8FTbhe/",
+            "platform": "Instagram"
+        },
+        {
+            "id": "mr1k1cd9a3ntk",
+            "created": 1782878854365,
+            "addedBy": "kajal",
+            "title": "Cheap Date Ideas",
+            "details": "• do a workout class together\n• go on a hike\n• learn a new sport together\n• go on a colour walk\n• horseback riding\n• try indoor rock-climbing\n• learn to skateboard / rollerskate\n• have a couple's sports day (better as a double or triple date)\n• go to a yoga class together\n• take a couples dance class",
+            "cat": "mr1jywnzi2u2r",
+            "sub": "Active",
+            "status": "idea",
+            "cost": "",
+            "tags": [],
+            "source": "https://www.instagram.com/p/DYw2agJkeVT/",
+            "platform": "Instagram"
+        },
+        {
+            "id": "mr1k2dbqe6ntg",
+            "created": 1782878902262,
+            "addedBy": "kajal",
+            "title": "Cheap Date Ideas",
+            "details": "• go thrifting and buy a whole new outfit for each other\n• go to a bookstore and pick out a book for each other\n• have a \"yes day\" for you both\n• go on a road-trip but without directions\n• explore a new side of your city / state\n• volunteer together\n• build a time capsule\n• watch a magic show\n• try an escape room\n• go to an open house",
+            "cat": "mr1jywnzi2u2r",
+            "sub": "Assortment",
+            "status": "idea",
+            "cost": "",
+            "tags": [],
+            "source": "https://www.instagram.com/p/DYw2agJkeVT/",
+            "platform": "Instagram"
+        },
+        {
+            "id": "mr1k2vsdwgp0r",
+            "created": 1782878926189,
+            "addedBy": "kajal",
+            "title": "Cheap Date Ideas",
+            "details": "• have a cook off\n• build a fort and have a movie night\n• make a shared vision board\n• play board games\n• have a themed movie night\n• try baking without a recipe\n• play co-op video games\n• have a spa night\n• cook a dish from a different country\n• have a karaoke night at home\n• binge a tv show together",
+            "cat": "mr1jywnzi2u2r",
+            "sub": "Assortment",
+            "status": "idea",
+            "cost": "",
+            "tags": [],
+            "source": "https://www.instagram.com/p/DYw2agJkeVT/",
+            "platform": "Instagram"
+        },
+        {
+            "id": "mr1k3je7ik71x",
+            "created": 1782878956783,
+            "addedBy": "kajal",
+            "title": "Cheap Date Ideas",
+            "details": "• try to paint each other\n• create a scrapbook of your memories\n• make a playlist for each other\n• go to a pottery class\n• candle making\n• do puzzles\n• jewellery making class\n• build legos\n• have your own sip & paint\n• talk an improve class\n• watch a play",
+            "cat": "mr1jywnzi2u2r",
+            "sub": "Artsy",
+            "status": "idea",
+            "cost": "",
+            "tags": [],
+            "source": "https://www.instagram.com/p/DYw2agJkeVT/",
+            "platform": "Instagram"
+        },
+        {
+            "id": "mr1k5ia2jz3x5",
+            "created": 1782879048650,
+            "addedBy": "kajal",
+            "title": "Classic Dates",
+            "details": "* ﻿﻿go to the museum\n* ﻿﻿play mini golf\n* ﻿﻿visit a farmers market\n* ﻿﻿watch a movie in the drive-in\n* ﻿﻿go to the movies\n* ﻿﻿see a concert\n* ﻿﻿watch the sunset\n* ﻿﻿go on a picnic\n* ﻿﻿drive go-karts\n* ﻿﻿play games in an arcade\n* ﻿﻿go bowling",
+            "cat": "mr1jywnzi2u2r",
+            "sub": "Assortment",
+            "status": "idea",
+            "cost": "",
+            "tags": [],
+            "source": "https://www.instagram.com/p/DYw2agJkeVT/",
+            "platform": "Instagram"
+        }
+    ]
+};
 }
 
 /* ============================================================
